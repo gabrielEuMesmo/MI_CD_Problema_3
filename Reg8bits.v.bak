@@ -8,14 +8,14 @@ module Reg8bits(Q, CK, D, Enable);
 	
 	wire [7:0]T;
 	
-	DFlipFlop(T[0], CK, Q[0],);
-	DFlipFlop(T[1], CK, Q[1],);
-	DFlipFlop(T[2], CK, Q[2],);
-	DFlipFlop(T[3], CK, Q[3],);
-	DFlipFlop(T[4], CK, Q[4],);
-	DFlipFlop(T[5], CK, Q[5],);
-	DFlipFlop(T[6], CK, Q[6],);
-	DFlipFlop(T[7], CK, Q[7],);
+	DFlipFlopNeg(T[0], CK, Q[0],);
+	DFlipFlopNeg(T[1], CK, Q[1],);
+	DFlipFlopNeg(T[2], CK, Q[2],);
+	DFlipFlopNeg(T[3], CK, Q[3],);
+	DFlipFlopNeg(T[4], CK, Q[4],);
+	DFlipFlopNeg(T[5], CK, Q[5],);
+	DFlipFlopNeg(T[6], CK, Q[6],);
+	DFlipFlopNeg(T[7], CK, Q[7],);
 	
 	// Multiplexadores responsaveis pela lógica de Enable;
 	

@@ -1,4 +1,4 @@
-module DFlipFlop(D, CK, Q, nQ);
+module DFlipFlopNeg(D, CK, Q, nQ);
 
 
 	// FlipFlop D com ativação em borda de decida no Clock;
@@ -7,7 +7,7 @@ module DFlipFlop(D, CK, Q, nQ);
 	output reg Q; 
 	output nQ;
 	
-	always @ (posedge CK)begin
+	always @ (negedge CK)begin
 	
 	 Q <= D;
 	 
